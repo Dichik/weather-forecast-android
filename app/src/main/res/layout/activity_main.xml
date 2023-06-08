@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_latitude_label"
+        android:layout_marginStart="8dp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/text_longitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_latitude_label"
+        android:layout_marginTop="16dp"
+        android:text="Longitude:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_latitude"
+        android:layout_toRightOf="@id/text_longitude_label"
+        android:layout_marginStart="8dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_get_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_longitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Get Forecast" />
+
+    <TextView
+        android:id="@+id/text_weather_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_get_forecast"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
